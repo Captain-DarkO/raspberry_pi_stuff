@@ -19,10 +19,6 @@ reboot
 sudo apt-get install gpsd gpsd-clients
 rce-directory /etc/network/interfaces.d
 
-#auto wlan0
-#iface wlan0 inet dhcp 
-#wpa-ssid "Data"
-#wpa-psk  "Apple@7890
 sudo killall gpsd
 sudo gpsd /dev/ttyS0 -F /var/run/gpsd.sock
 
